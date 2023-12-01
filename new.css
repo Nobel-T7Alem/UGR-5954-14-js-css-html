@@ -1,0 +1,70 @@
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333333; 
+    background-color: #f4f4f4; 
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #2E4053; 
+    padding: 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #FFFFFF; 
+    font-weight: bold;
+}
+
+
+.portrait-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.portrait-info img {
+    max-width: 100%;
+    height: auto;
+}
+
+.info-text {
+    text-align: center;
+    padding: 10px;
+    color: #424949; 
+}
+
+
+.skills {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    font-size: 24px;
+    color: #1A5276;
+}
+
+
+.projects-link {
+    text-align: center;
+    padding: 20px;
+}
+
+.projects-link a {
+    font-size: 24px;
+    text-decoration: none;
+    color: #2E4053; 
+}
+a :hover {color: gold;}
+
+@media (max-width: 600px) {
+    .portrait-info, .skills {
+        flex-direction: column;
+    }
+}

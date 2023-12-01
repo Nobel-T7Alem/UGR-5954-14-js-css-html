@@ -1,0 +1,86 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333333; /* Dark Gray for Text */
+    background-color: #f4f4f4; /* Light Gray Background */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #2E4053; /* Navy Blue for Navigation Bar */
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFFFFF; /* White for Links */
+    padding: 5px 10px;
+}
+
+nav .home-link {
+    margin-right: auto;
+}
+
+nav .other a {
+    margin-right: 10px;
+}
+
+.hello {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5em;
+    color: #1A5276; /* Darker Blue for Heading */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.volunteer-video {
+    max-width: 100%;
+    height: auto;
+}
+
+.volunteer-info {
+    padding: 20px;
+    background-color: #D5D8DC; /* Lighter Gray for Volunteer Info Background */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.volunteer-title {
+    text-align: left;
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: #2E4053; /* Navy Blue for Titles */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.volunteer-description {
+    text-align: left;
+    font-size: 1em;
+    white-space: pre-line;
+    color: #424949; /* Darker Gray for Description Text */
+    font-family: 'Montserrat', sans-serif;
+}
+nav a:hover {
+    color: #D4AF37; /* Gold Color for Hover */
+    transition: color 0.3s ease-in-out;
+}
+@media (max-width: 768px) {
+    .volunteer-info {
+        padding: 10px;
+    }
+
+    .hello, .volunteer-title {
+        font-size: 1.2em;
+    }
+
+    .volunteer-description {
+        font-size: 0.9em;
+    }
+}

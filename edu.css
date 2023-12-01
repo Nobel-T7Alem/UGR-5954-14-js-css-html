@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #333333; 
+    background-color: #f4f4f4; 
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #2E4053; 
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 5px 10px;
+}
+nav a:hover {
+    color: #D4AF37; 
+    transition: color 0.3s ease-in-out;
+}
+nav .home-link {
+    margin-right: auto;
+}
+
+nav .other a {
+    margin-right: 10px;
+}
+
+.Hello {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5em;
+    color: #1A5276; 
+}
+
+.education-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.edu {
+    margin: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.school-info {
+    margin: 10px;
+    text-align: center;
+}
+
+.school {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2E4053; 
+}
+
+.school-description {
+    font-size: 18px;
+    color: #424949; 
+}
+
+@media (max-width: 768px) {
+    .education-item {
+        flex-direction: column;
+    }
+}
