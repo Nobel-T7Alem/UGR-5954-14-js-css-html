@@ -2,85 +2,178 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    color: #333333; /* Dark Gray for Text */
-    background-color: #f4f4f4; /* Light Gray Background */
+    color: #333333;
+    background-color: #f4f4f4;
 }
 
-nav {
+.navbar {
     display: flex;
     justify-content: space-between;
     padding: 15px;
-    background-color: #2E4053; /* Navy Blue for Navigation Bar */
+    background-color: #2E4053;
 }
 
-nav a {
+.footer { 
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 0.5%;
+}
+
+.navbar__link, .navbar__link--home {
     text-decoration: none;
-    color: #FFFFFF; /* White for Links */
+    color: #FFFFFF; 
     padding: 5px 10px;
 }
 
-nav .home-link {
+.navbar__link--home {
     margin-right: auto;
 }
 
-nav .other a {
+.navbar__links .navbar__link {
     margin-right: 10px;
 }
 
-.hello {
+.main-heading {
     text-align: center;
     padding: 20px;
     font-size: 1.5em;
-    color: #1A5276; /* Darker Blue for Heading */
+    color: #1A5276; 
     font-family: 'Montserrat', sans-serif;
 }
 
-.video-container {
+.content__video-container {
     display: flex;
     justify-content: center;
     padding: 20px;
 }
 
-.volunteer-video {
+.content__video {
     max-width: 100%;
     height: auto;
 }
 
-.volunteer-info {
+.content__info {
     padding: 20px;
-    background-color: #D5D8DC; /* Lighter Gray for Volunteer Info Background */
+    background-color: #D5D8DC; 
     font-family: 'Montserrat', sans-serif;
 }
 
-.volunteer-title {
+.content__title {
     text-align: left;
     font-size: 1.2em;
     margin-top: 20px;
-    color: #2E4053; /* Navy Blue for Titles */
+    color: #2E4053; 
     font-family: 'Montserrat', sans-serif;
 }
 
-.volunteer-description {
+.content__description {
     text-align: left;
     font-size: 1em;
     white-space: pre-line;
-    color: #424949; /* Darker Gray for Description Text */
+    color: #424949; 
     font-family: 'Montserrat', sans-serif;
 }
-nav a:hover {
-    color: #D4AF37; /* Gold Color for Hover */
+
+.navbar__link:hover {
+    color: #D4AF37;
     transition: color 0.3s ease-in-out;
 }
-@media (max-width: 768px) {
-    .volunteer-info {
+
+/* ... [Previous CSS Styles] ... */
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    .main-heading {
+        font-size: 1em;
+    }
+
+    .content__video-container {
+        flex-direction: column;
+        align-items: center;
         padding: 10px;
     }
 
-    .hello, .volunteer-title {
+    .content__video {
+        width: 90%;
+    }
+
+    .content__info {
+        margin-bottom: 15px;
+    }
+
+    .content__description {
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+    .main-heading {
+        font-size: 1.1em;
+    }
+
+    .content__video-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .content__video {
+        width: 100%;
+    }
+
+    .content__info {
+        margin-bottom: 15px;
+    }
+
+    .content__description {
+        font-size: 0.9em;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .main-heading {
         font-size: 1.2em;
     }
 
-    .volunteer-description {
-        font-size: 0.9em;
+    .content__video-container {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 15px;
+    }
+
+    .content__video {
+        width: 50%;
+    }
+
+    .content__info {
+        margin-bottom: 20px;
+    }
+
+    .content__description {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .main-heading {
+        font-size: 1.5em;
+    }
+
+    .content__video-container {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .content__video {
+        width: 50%;
+    }
+
+    .content__info {
+        margin-bottom: 25px;
+    }
+
+    .content__description {
+        font-size: 1.2em;
     }
 }

@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,42 +7,44 @@
     <title>Volunteer work | Portfolio</title>
     <link rel="stylesheet" href="vol.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-
 </head>
 <body>
-    <nav>
-        <div class="home-link">
+    <nav class="navbar">
+        <div class="navbar__link--home">
             <a href="home.html">Home</a>
         </div>
-        <div class="other">
-            <a href="projects.html">Projects</a>
-            <a href="education.html">Education</a>
-            <a href="socials.html">Socials</a>
+        <div class="navbar__links">
+            <a href="projects.html" class="navbar__link">Projects</a>
+            <a href="education.html" class="navbar__link">Education</a>
+            <a href="socials.html" class="navbar__link">Socials</a>
         </div>
     </nav>
 
-    <h1 class="hello">Here are some volunteer projects I have worked on</h1>
-
-    <div class="video-container">
-        <video width="480" height="270" controls loop muted autoplay class="volunteer-video">
-            <source src="Images/Video.mp4" type="video/mp4">
-        </video>
-    </div>
+    <h1 class="main-heading">Here are some volunteer projects I have worked on</h1>
+    <div class="content">
+        <div class="content__video-container">
+            <video width="480" height="270" controls loop muted autoplay class="content__video">
+                <source src="Images/Video.mp4" type="video/mp4">
+            </video>
+        </div>
     
-    <div class="volunteer-info">
-        <h3 class="volunteer-title">Care Epilepsy Ethiopia</h3>
-        <pre class="volunteer-description">
-CareEpilepsy ETHIOPIA is a branch of the CareEpilepsy, which was registered on the 3rd February 2015 to work in Ethiopia.
-My duties there involved making contributions to the patient's care and well being, help with the cleaning and provide some
-insight in research projects. You can read more about CareEpilipsy by clicking this <a href="http://care-epilepsy.org/careepilepsy-ethiopia/">link</a>
-        </pre>
+        <div class="content__info">
+            <h3 class="content__title">Care Epilepsy Ethiopia</h3>
+            <pre class="content__description">
+                &#x2609; CareEpilepsy ETHIOPIA is a branch of the CareEpilepsy, which was registered on the 3rd February 2015 to work in Ethiopia.
+                My duties there involved making contributions to the patient's care and well being, help with the cleaning and provide some insight in research projects. You can read more about CareEpilipsy by clicking this <a href="http://care-epilepsy.org/careepilepsy-ethiopia/" class="content__link">link</a>
+            </pre>
 
-        <h3 class="volunteer-title">Ethiopian Cancer Society</h3>
-        <pre class="volunteer-description">
-The Ethiopian Cancer Society is an organization fighting for a great cause. I had a great time learning about the 
-exciting breakthroughs being made in cancer treatment and helping the afflicted recover and lead better lives. My duties
-here also involved providing insight in research and helping with general tasks.
-        </pre>
+            <h3 class="content__title">Ethiopian Cancer Society</h3>
+            <pre class="content__description">
+                &#x2609; The Ethiopian Cancer Society is an organization fighting for a great cause. I had a great time learning about the exciting breakthroughs being made in cancer treatment and helping the afflicted recover and lead better lives. 
+                My duties here also involved providing insight in research and helping with general tasks.
+            </pre>
+        </div>
     </div>
+    <footer class="footer">
+        <p class="footer__text">&#169; 2023 Nobel Tibebe. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
+
